@@ -1,0 +1,11 @@
+#container{
+    width: 100em;
+    height: 50em;
+    border: 1px solid black;
+}
+#player{
+    width: 5em;
+    height: 5em;
+    border: 1px solid black;
+    position:fixed
+}
