@@ -9,29 +9,27 @@ window.addEventListener("keydown",(e)=>{
 })
 
 function rightMove(e){
-    if(e.key === "ArrowRight"){
+    if(e.key === "ArrowRight" && leftRifgtMove > -700){
         leftRifgtMove -= 20;
         player.style.right = `${leftRifgtMove}px`
     }
 }
 function leftMove(e){
-    if(e.key === "ArrowLeft"){
+    if(e.key === "ArrowLeft" && leftRifgtMove < 0){
         leftRifgtMove += 20;
         player.style.right = `${leftRifgtMove}px`
-
     }
 }
 function upMove(e){
-    if(e.key === "ArrowUp"){
+    if(e.key === "ArrowUp" && upDownMove < 0){
     upDownMove += 20;
     player.style.bottom = `${upDownMove}px`;
-    console.log("moveup")
+
     }
 }
 function downMove(e){
-    if(e.key === "ArrowDown"){
+    if(e.key === "ArrowDown" && upDownMove > -600){
     upDownMove -= 20;
     player.style.bottom = `${upDownMove}px`;
-    console.log("movedown")
     }
 }
